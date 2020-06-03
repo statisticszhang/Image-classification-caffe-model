@@ -1,6 +1,6 @@
-## CLS (Classification)
+## Image classification
 
-Please install [py-RFCN-priv](https://github.com/soeaver/py-RFCN-priv) for evaluating and finetuning.
+Use the caffe framework for image classification tasks.
 
 ### Disclaimer
 
@@ -8,10 +8,20 @@ Most of the models are converted from other projects, the main contribution belo
 
 Project links:
 
-[mxnet-model-gallery](https://github.com/dmlc/mxnet-model-gallery)、 [tensorflow slim](https://github.com/tensorflow/models/tree/master/slim)、 [craftGBD](https://github.com/craftGBD/craftGBD)、 [ResNeXt](https://github.com/facebookresearch/ResNeXt)、 [DenseNet](https://github.com/liuzhuang13/DenseNet)、 [wide-residual-networks](https://github.com/szagoruyko/wide-residual-networks)、 [keras deep-learning-models](https://github.com/fchollet/deep-learning-models)、 [ademxapp](https://github.com/itijyou/ademxapp)、 [DPNs](https://github.com/cypw/DPNs)、[Senet](https://github.com/hujie-frank/SENet)
+[mxnet-model-gallery](https://github.com/dmlc/mxnet-model-gallery)
+[tensorflow slim](https://github.com/tensorflow/models/tree/master/slim)
+[craftGBD](https://github.com/craftGBD/craftGBD)
+[ResNeXt](https://github.com/facebookresearch/ResNeXt)
+[DenseNet](https://github.com/liuzhuang13/DenseNet)
+[wide-residual-networks](https://github.com/szagoruyko/wide-residual-networks)
+[keras deep-learning-models](https://github.com/fchollet/deep-learning-models)
+[ademxapp](https://github.com/itijyou/ademxapp)
+[DPNs](https://github.com/cypw/DPNs)
+[Senet](https://github.com/hujie-frank/SENet)
 
 
 ### Performance on imagenet validation.
+
 **1. Top-1/5 error of pre-train models in this repository.**
 
  Network|224/299<br/>(single-crop)|224/299<br/>(12-crop)|320/395<br/>(single-crop)|320/395<br/>(12-crop)
@@ -53,6 +63,7 @@ Project links:
  - 224x224(base_size=256) and 320x320(base_size=320) crop size for resnet-v2/resnext/wrn, 299x299(base_size=320) and 395x395(base_size=395) crop size for inception.
 
 **2. Top-1/5 accuracy with different crop sizes.**
+
 ![teaser](https://github.com/soeaver/caffe-model/blob/master/cls/accuracy.png)
  - Figure: Accuracy curves of inception_v3(left) and resnet101_v2(right) with different crop sizes.
 
@@ -95,6 +106,7 @@ Project links:
  - For speeding up xception, we adopt [convolution depthwise layer](https://github.com/BVLC/caffe/pull/5665/files).
 
 ### Check the performance
+
 **1. Download the ILSVRC 2012 classification val set [6.3GB](http://www.image-net.org/challenges/LSVRC/2012/nnoupb/ILSVRC2012_img_val.tar), and put the extracted images into the directory:**
 
       ~/Database/ILSVRC2012
