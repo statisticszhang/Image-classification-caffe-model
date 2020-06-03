@@ -1,15 +1,5 @@
-# Caffe-model
-Python script to generate prototxt on Caffe, specially the inception_v3\inception_v4\inception_resnet\fractalnet
-
-# Generator scripts
-
-The prototxts can be visualized by [ethereon](http://ethereon.github.io/netscope/quickstart.html).
-
-Every model has a bn (batch normalization) version (maybe only bn version), the paper is [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](http://arxiv.org/pdf/1502.03167v3)
-
-
-
 # Classificaiton (imagenet)
+
 
 ### Introduction
 This folder contains the deploy files(include generator scripts) and pre-train models of resnet-v1, resnet-v2, inception-v3, inception-resnet-v2 and densenet(coming soon).
@@ -127,11 +117,3 @@ The main contribution belongs to the authors and model trainers.
     ```
     python evaluation_cls.py
     ```
-
-
-
-# Acknowlegement
-
-I greatly thank [Yangqing Jia](https://github.com/Yangqing) and [BVLC group](https://www.github.com/BVLC/caffe) for developing Caffe
-
-And I would like to thank all the authors of every cnn model
